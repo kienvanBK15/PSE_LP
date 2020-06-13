@@ -1,0 +1,69 @@
+:root {
+	--primary-color: blue;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Arial', san-serif;
+	-webkit-font-smoothicng: antialiased;
+	background: #e1e9ee;
+	color: black;
+}
+#mainheader {
+	background-color: #283e4a;
+	min-height: 61.8px;
+	width: 100%;
+}
+
+.homeicon {
+	float: left;
+	color: white;
+	font-size: 36px;
+	text-align: center;
+	width: 100px;
+	background-color: #C1C1C1;
+	min-height: 50px;
+	padding: 12px 0; 
+	transition: all 0.3s ease;
+}
+
+.homeicon:hover {
+  background-color: #6D6D6D; /* Add a hover color */
+}
+
+.searchicon {
+	position: absolute;
+	padding: 10px;
+	margin-top: 15.45px;
+	margin-left: 20px;
+}
+
+#searchbar {
+	width: 250px;
+	height: 31.8px;
+	border: none;
+	text-align: center;
+	border-radius: 50px;
+	margin-left: 20px;
+	margin-top: 15px;
+}
+
+#tt {
+	position: absolute;
+	left: 750px;
+	top: 5px;
+	text-transform: uppercase;
+	color: white;
+	font-size: 50px;
+	max-height: 61.8px;
+	padding: auto;
+}
+
+@media only screen and (max-width: 768px){
+
+}
