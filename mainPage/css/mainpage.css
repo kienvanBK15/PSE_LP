@@ -9,61 +9,176 @@
 }
 
 body {
-	font-family: 'Arial', san-serif;
-	-webkit-font-smoothicng: antialiased;
-	background: #e1e9ee;
-	color: black;
-}
-#mainheader {
-	background-color: #283e4a;
-	min-height: 61.8px;
-	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: #f4f4f4;
+	font-weight: normal;
 }
 
-.homeicon {
-	float: left;
-	color: white;
+header {
+	background-color: #35424a;	
+	color: #ffffff;
+	max-height: 56px;
+	overflow: hidden;
+}
+
+.icon {
+	color: #ffffff;
 	font-size: 36px;
 	text-align: center;
-	width: 100px;
-	background-color: #C1C1C1;
-	min-height: 50px;
-	padding: 12px 0; 
-	transition: all 0.3s ease;
+	margin: 10px;
+	padding: 0;
 }
 
-.homeicon:hover {
-  background-color: #6D6D6D; /* Add a hover color */
+#home-icon {
+	display: inline-block;
+	background-color: #0099e6;
+	width: 60.5px;
+	padding: 0;
+	margin: 0;
 }
 
-.searchicon {
-	position: absolute;
-	padding: 10px;
-	margin-top: 15.45px;
-	margin-left: 20px;
+#home-icon:hover {
+  background-color: #0074b3; /* Add a hover color */
+}
+
+.container {
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	left: 10px;
+	bottom: 10px;
 }
 
 #searchbar {
-	width: 250px;
-	height: 31.8px;
-	border: none;
-	text-align: center;
+	border-style: none;
 	border-radius: 50px;
-	margin-left: 20px;
-	margin-top: 15px;
+	width: 350px;
+	height: 35px;
+	text-align: center;
 }
 
-#tt {
-	position: absolute;
-	left: 750px;
-	top: 5px;
+.searchicon {
+	position: relative;
+	color: black;
+	left: 30px;
+	top: 2px;
+}
+
+.tt {
+	display: inline-block;
 	text-transform: uppercase;
-	color: white;
+	position: relative;
+	text-align: center;
+	left: 20%;
+}
+
+header .highlight {
+	color: #0099e6;
+	font-weight: bold;
+}
+
+/* header */
+
+#intro {
+	margin-top: 3em;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 3em;
+}
+
+#intro .box{
+	background-color: white;
+	float: left;
+	width: 400px;
+	height: 200px;
+	padding: 30px;
+	text-align: center;
+	border: solid 1px #D3D3D3;
+}
+
+#highlight1 {
+	font-weight: bold;
+}
+
+#highlight2 {
+	font-weight: lighter;
+}
+
+#tt2 {
+	margin-bottom: 10px;
+}
+
+.box p {
+	line-height: 25px;
+}
+
+.box-icon {
 	font-size: 50px;
-	max-height: 61.8px;
-	padding: auto;
+	margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 768px){
-
+#donald-trump {
+	border-radius: 100px;
+	margin-top: 10px;
 }
+
+#highlight3 {
+	font-weight: bold;
+}
+
+.highlight4 {
+	font-weight: lighter;
+	color: #808080;
+}
+
+#intro .box:hover {
+	background-color: #A9A9A9;
+}
+
+/* profile box */
+
+#profile-box .container {
+	width: 250px;
+	border: solid 1px;
+	height: 200px;
+	background-color: #F0F8FF;
+}
+
+#top-background {
+	border: ridge 1px #D3D3D3;
+}
+
+#profile {
+	position: absolute;
+	top: 10px;
+	left: 85px;
+	border-radius: 100px;
+	border: solid 1px #FFFFF0;
+	height: 80px;
+	width: 80px;
+	background-color: #FFF8DC;
+}
+
+#profile-pic {
+	position: absolute;
+	bottom: 2px;
+	left: 2px;
+}
+
+#welcome {
+	margin-top: 50px;
+}
+
+#welcome p {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+#welcome a {
+	text-decoration: none;
+	color: #20B2AA;
+	font-size: 14px;
+}
+
