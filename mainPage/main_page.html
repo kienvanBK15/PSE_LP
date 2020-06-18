@@ -8,10 +8,29 @@
     <script src="https://kit.fontawesome.com/b6fc7b701c.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
     <link href="css/mainpage.css" rel="stylesheet" type="text/css" />
+    <script src="js/main.js"></script>
     <title>LinkedIn Platform</title>
 </head>
 
 <body>
+
+    <div id="overlay">
+        <form>
+            <div class="input-form">
+                <p>Title</p>
+                <input type="text" name="Status Title" placeholder="#" id="sttt">
+            </div>
+            <div class="input-form">
+                <p>Subject</p>
+                <textarea id="stsubject" name="Status Subject" placeholder="Write something.."></textarea>
+            </div>
+            <div class="clear"></div>
+            <div>
+                <button type="submit" id="submit-button">Post</button>
+            </div>
+        </form>
+    </div>
+
     <header>
         <div id="home-icon">
             <a href="#"><i class="fas fa-home icon"></i></a>
@@ -24,11 +43,12 @@
         	<h1><span class="highlight">LinkedIn</span> Platform</h1>
         </div>
     </header>
+
     <section id="intro">
         <div class="container">
             <div class="box">
                 <h3><span id="highlight1">Trump</span> <span id="highlight2">invited you to connect</span></h3>
-                <img src="pic/donald_trump.jpg" alt="Donald Trump" width="70" height="70" id="donald-trump">
+                <img src="pic/donald_trump.jpg" alt="Donald Trump" width="75" height="75" id="donald-trump">
                 <p id="highlight3">Donald Trump</p>
                 <p class="highlight4">President of the United States</p>
             </div>
@@ -45,6 +65,7 @@
             </div>
         </div>
     </section>
+
     <aside id="profile-box">
         <div class="container">
             <div>
@@ -59,5 +80,71 @@
             </div>
         </div>
     </aside>
+
+    <section id="post-status">
+        <div class="container">
+            <div class="status-box">
+                <a href="#" onclick="on()"><i class="far fa-edit"> Start a post</i></a>
+            </div>
+            <div class="icon">
+                <a href="#"><i class="fas fa-camera"></i></a>
+            </div>
+            <div class="icon">
+                <a href="#"><i class="fas fa-video"></i>
+            </div></a>
+            <div id="right-icon">
+                <a href="#"><i class="far fa-file-alt"></i></a>
+            </div>
+            <div id="message"><span class="highlight">Write an article</span> on LinkedIn</div>
+        </div>
+    </section>
+
+    <aside id="suggestion">
+        <div class="container">
+            <header>
+                <p>Add to your feed</p>
+                <i class="fas fa-info-circle"></i>
+            </header>
+            <div class="employer">
+                <img src="pic/google-icon.png" alt="Google" width="50" height="50" id="google-icon">
+                <div class="description">
+                    <h1>Google</h1>
+                    <p>Company</p>
+                </div>
+                <button type="submit" value="Submit">Follow</button>
+            </div>
+
+            <div class="clear">
+            </div>
+
+            <div class="employer">
+                <img src="pic/facebook-icon.png" alt="Facebook" width="30" height="30" id="facebook-icon">
+                <div class="description">
+                    <h1>Facebook</h1>
+                    <p>Company</p>
+                </div>
+                <button type="submit" value="Submit">Follow</button>
+            </div>
+
+            <div class="clear">
+            </div>
+
+            <div class="employer">
+                <img src="pic/youtube-icon.png" alt="Youtube" width="50" height="50" id="youtube-icon">
+                <div class="description">
+                    <h1>Google</h1>
+                    <p>Company</p>
+                </div>
+                <button type="submit" value="Submit">Follow</button>
+            </div>
+
+            <div class="clear"></div>
+
+            <footer>
+                <a href="#">View all recommendations</a>
+            </footer>
+        </div>
+    </aside>
+
 </body>
 </html>
