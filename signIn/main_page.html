@@ -147,47 +147,47 @@
     </header>
       
     <p>
-        <button class="button" data-modal="modalOne">Sign in</button>
-      </p>
-      <div id="modalOne" class="modal">
-        <div class="modal-content">
-          <div class="contact-form">
-            <a class="close">&times;</a>
-            <form action="../mainPage/main_page.html">
-              <h2>Wellcome</h2>
-              <div>
-                <input class="fname" type="email" name="email" placeholder="Enter your email">
-                <input type="password" name="name" placeholder="password">
-              </div>
-              <button type="submit" href="../mainPage/main_page.html">Sign in</button>
-            </form>
-          </div>
+    <button class="button" data-modal="modalOne">Sign in</button>
+    </p>
+    <div id="modalOne" class="modal">
+    <div class="modal-content">
+        <div class="contact-form">
+        <a class="close">&times;</a>
+        <form action="../mainPage/main_page.html">
+            <h2>Wellcome</h2>
+            <div>
+            <input class="fname" type="email" name="email" placeholder="Enter your email">
+            <input type="password" name="name" placeholder="password">
+            </div>
+            <button type="submit" href="../mainPage/main_page.html">Sign in</button>
+        </form>
         </div>
-      </div>
-      </div>
-      <script>
-        var modalBtns = [...document.querySelectorAll(".button")];
-        modalBtns.forEach(function(btn){
-          btn.onclick = function() {
-            var modal = btn.getAttribute('data-modal');
-            document.getElementById(modal).style.display = "block";
-          }
-        });
-        
-        var closeBtns = [...document.querySelectorAll(".close")];
-        closeBtns.forEach(function(btn){
-          btn.onclick = function() {
-            var modal = btn.closest('.modal');
-            modal.style.display = "none";
-          }
-        });
-        
-        window.onclick = function(event) {
-          if (event.target.className === "modal") {
-            event.target.style.display = "none";
-          }
+    </div>
+    </div>
+    </div>
+    <script>
+    var modalBtns = [...document.querySelectorAll(".button")];
+    modalBtns.forEach(function(btn){
+        btn.onclick = function() {
+        var modal = btn.getAttribute('data-modal');
+        document.getElementById(modal).style.display = "block";
         }
-      </script>
+    });
+    
+    var closeBtns = [...document.querySelectorAll(".close")];
+    closeBtns.forEach(function(btn){
+        btn.onclick = function() {
+        var modal = btn.closest('.modal');
+        modal.style.display = "none";
+        }
+    });
+    
+    window.onclick = function(event) {
+        if (event.target.className === "modal") {
+        event.target.style.display = "none";
+        }
+    }
+    </script>
 
     <section id="intro">
         <div class="container">
