@@ -9,13 +9,14 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
     <link href="css/mainpage.css" rel="stylesheet" type="text/css" />
     <script src="js/main.js"></script>
+    <?php include 'php/save.php'; ?>
     <title>LinkedIn Platform</title>
 </head>
 
 <body>
 
     <div id="overlay">
-        <form>
+        <form method="POST" action="save.php" required="true">
             <div class="input-form">
                 <p>Title</p>
                 <input type="text" name="Status Title" placeholder="#" id="sttt">
@@ -26,7 +27,7 @@
             </div>
             <div class="clear"></div>
             <div>
-                <button type="submit" id="submit-button">Post</button>
+                <button type="button" id="submit-button" onclick="submitButtonClicked()">Post</button>
             </div>
         </form>
     </div>
@@ -43,11 +44,6 @@
         	<h1><span class="highlight">LinkedIn</span> Platform</h1>
         </div>
     </header>
-
-        <p>
-        <a href="../index.html" class="button" data-modal="modalOne">Sign out</a>
-        </p>
-
 
     <section id="intro">
         <div class="container">
@@ -102,6 +98,14 @@
             </div>
             <div id="message"><span class="highlight">Write an article</span> on LinkedIn</div>
         </div>
+        <div id="container-status">
+            <div id="user-status">
+                <img id="demo3" src="pic/profile-pic.png" width="50" height="50" >
+                <span id="demo4" onclick="editStatus()">&#9881;</span>
+                <h1 id="demo1"></h1>
+                <p id="demo2"></p>
+            </div>
+        </div>
     </section>
 
     <aside id="suggestion">
@@ -151,5 +155,7 @@
         </div>
     </aside>
 
+    <div class="clear"></div>
+    
 </body>
 </html>
