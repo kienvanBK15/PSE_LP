@@ -2,32 +2,31 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="keywords" content="IT">
     <meta name="description" content="IT Platform"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b6fc7b701c.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
     <link href="css/mainpage.css" rel="stylesheet" type="text/css" />
-    <script src="js/main.js"></script>
-    <?php include 'php/save.php'; ?>
     <title>LinkedIn Platform</title>
 </head>
 
 <body>
 
     <div id="overlay">
-        <form method="POST" action="save.php" required="true">
+        <form action="">
             <div class="input-form">
                 <p>Title</p>
-                <input type="text" name="Status Title" placeholder="#" id="sttt">
+                <input type="text" name="title" placeholder="#" id="sttt">
             </div>
             <div class="input-form">
                 <p>Subject</p>
-                <textarea id="stsubject" name="Status Subject" placeholder="Write something.."></textarea>
+                <textarea type="text" id="stsubject" name="content" placeholder="Write something.."></textarea>
             </div>
             <div class="clear"></div>
             <div>
-                <button type="button" id="submit-button" onclick="submitButtonClicked()">Post</button>
+                <button id="submit-button">Post</button>
             </div>
         </form>
     </div>
@@ -98,13 +97,13 @@
             </div>
             <div id="message"><span class="highlight">Write an article</span> on LinkedIn</div>
         </div>
-        <div id="container-status">
-            <div id="user-status">
-                <img id="demo3" src="pic/profile-pic.png" width="50" height="50" >
+        <div class="container-status">
+            <div class="user-status">
+                <!-- <img id="demo3" src="pic/profile-pic.png" width="50" height="50" >
                 <span id="demo4" onclick="editStatus()">&#9881;</span>
                 <h1 id="demo1"></h1>
                 <p id="demo2"></p>
-            </div>
+            </div> --> 
         </div>
     </section>
 
@@ -156,6 +155,6 @@
     </aside>
 
     <div class="clear"></div>
-    
+    <script src="js/main.js"></script>
 </body>
 </html>

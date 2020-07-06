@@ -278,7 +278,7 @@ header .highlight {
 	font-weight: bold;
 }
 
-#container-status {
+.container-status {
 	display: flex;
 	justify-content: center;
 	text-align: center;
@@ -294,32 +294,31 @@ header .highlight {
 	float: left;
 }
 
-#user-status {
-	display: none;
+/* .user-status {
 	width: 80%;
-	height: 75px;
-	border: 1px solid black;
-	margin-top: 20px;
-	padding: 10px;
-	text-align: left;
-	z-index: 1;
-	background-color: white;
+	margin: 0 auto;
+} */
+
+.container-status > div {
+background: hsl(0, 0%, 95%);
+padding: 12px;
+border-radius: 4px;
 }
 
-#demo3 {
-	float: left;
+.container-status > div > h3 {
+word-wrap: break-word;
 }
 
-#demo4 {
-	float: right;
-	cursor: pointer;
+.container-status > div > p {
+word-wrap: break-word;
 }
+
+.container-status > div:not(:last-child) {
+margin-bottom: 8px;
+}
+
 
 /* post status */
-
-#suggestion {
-
-}
 
 #suggestion .container {
 	border: ridge 1px #D3D3D3;
