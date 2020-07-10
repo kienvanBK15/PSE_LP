@@ -288,36 +288,55 @@ header .highlight {
 	margin-top: 30px;
 	margin-left: 30px;
 	width: 610px;
-	height: 500px;
+	height: 100%;
 	background-color: #f3f6f8;
 	border: ridge 1px #D3D3D3;
 	float: left;
+	padding: 10px 10px;
 }
 
-/* .user-status {
-	width: 80%;
+.user-status {
+	width: 95%;
 	margin: 0 auto;
-} */
-
-.container-status > div {
-background: hsl(0, 0%, 95%);
-padding: 12px;
-border-radius: 4px;
 }
 
-.container-status > div > h3 {
-word-wrap: break-word;
+.user-status > div {
+	background: hsl(0, 0%, 95%);
+	padding: 12px;
+	border-radius: 4px;
+	border: 1px black inset;
+	text-align: left;
 }
 
-.container-status > div > p {
-word-wrap: break-word;
+.user-status > div > img {
+	float: left;
+	word-wrap: break-word;
 }
 
-.container-status > div:not(:last-child) {
-margin-bottom: 8px;
+.user-status > div > h3 {
+	word-wrap: break-word;
+	font-size: 30px;
 }
 
+.user-status > div > p {
+	word-wrap: break-word;
+	font-size: 20px;
+	white-space: pre-wrap;
+}
 
+.user-status > div > small {
+	word-wrap: break-word;
+	font-size: 10px;
+}
+
+.user-status > div:not(:last-child) {
+	margin-bottom: 8px;
+}
+
+.edit-icon {
+	float: right;
+	cursor: pointer;
+}
 /* post status */
 
 #suggestion .container {
