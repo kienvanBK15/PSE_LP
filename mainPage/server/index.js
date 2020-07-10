@@ -59,6 +59,27 @@ app.post('/posts', (req, res) => {
     }
 })
 
+app.put('/edit', (req, res) => {
+    if(isValidPost(req.body)) {
+        //insert to db
+        const post = { $set: {
+            title: filter.clean(req.body.title.toString()),
+            content: filter.clean(req.body.content.toString()),
+            created: new Date()
+            }
+        };
+        
+        posts   
+            .find()
+
+    } else {
+        res.status(422);
+        res.json({
+            message: 'Hey! Title and Content are required!'
+        });
+    }
+})
+
 app.listen(4000, () => {
     console.log('Listening on http://localhost:4000');
 });
